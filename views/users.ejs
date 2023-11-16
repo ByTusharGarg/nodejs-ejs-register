@@ -1,0 +1,19 @@
+<!-- views/users.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registered Users</title>
+</head>
+<body>
+  <h1>Registered Users</h1>
+  <ul>
+    <% users.forEach(user => { %>
+      <li>
+        <%= user.firstName %> <%= user.lastName %> - <%= user.email %> - Age: <%= user.age %> years - <%= user.gender %> - <%= user.country %>, <%= user.state %>, <%= user.city %>
+      </li>
+    <% }); %>
+  </ul>
+</body>
+</html>
